@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Source+Code+Pro:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.container {
+  background-color: rgb(120, 156, 156);
+  /* background-color: rgb(41, 41, 41); */
+  height: 50vh;
+  width: 100%;
+}
+
+.container2 {
+  background-color: rgb(40, 46, 74);
+  /* background-color: rgb(41, 41, 41); */
+  height: 50vh;
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  border-radius: 25px;
+  top: 15%;
+  bottom: 30%;
+  left: 35%;
+  width: 30%;
+  height: 65%;
+  background-color: rgb(237, 236, 236);
+}
+
+.current-time {
+  text-align: center;
+  font-size: 2.7rem;
+
+}
+
+#curr-time {
+  padding: 5px;
+  font-size: larger;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  padding: 1% 0 1% 0;
+}
+
+input,
+.label>p {
+  margin: 0 20px;
+  text-align: center;
+  height: 50px;
+  width: 90px;
+  font-size: 3.5vmin;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn {
+  padding: 2% 5%;
+  border-radius: 10px;
+  background-color: lightblue;
+  font-size: 2.5vmin;
+  font-weight: 700;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #68a1b0;
+}
+
+#alarm-list {
+  margin: 2%;
+  padding: 2%;
+}
+
+.activealarm {
+  background: rgb(136, 142, 136);
+  border-radius: 25px;
+  margin: 7px 0px;
+  font-size: 2em;
+  padding: 7px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activealarm button {
+  background: transparent;
+  border: none;
+  height: 24px;
+}
+
+.activealarm button img {
+  height: 100%;
+}
+
+.activealarm input[type="checkbox"] {
+  appearance: none;
+  height: 0.8em;
+  width: 1.5em;
+  background-color: #e2e2ec;
+  border-radius: 1em;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.activealarm input[type="checkbox"]:before {
+  position: absolute;
+  content: "";
+  background-color: #757683;
+  height: 0.7em;
+  width: 0.7em;
+  border-radius: 50%;
+  top: 0.04em;
+  left: 0.08em;
+}
+
+.activealarm input[type="checkbox"]:checked {
+  background-color: #d2e2ff;
+}
+
+.activealarm input[type="checkbox"]:checked:before {
+  background-color: #377dff;
+  left: 0.72em;
+}
+
+#alarm-list {
+  padding: 10px;
+  overflow-y: scroll;
+  height: 45%;
+}

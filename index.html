@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm CLock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="container2"></div>
+    <div class="content">
+        <div class="current-time">
+            <p id="curr-time"></p>
+        </div>
+
+        <div class="input">
+            <input type="number" id="input-hour" min="0" max="12" value="00" style="border-radius: 10px;border: 3px solid black;">
+            <input type="number" id="input-mintue" min="0" max="60" value="00" style="border-radius: 10px;border: 3px solid black;">
+            <!-- <input type="number" id="input-second" min="0" max="60" value="00" style="border-radius: 10px;border: 3px solid black;"> -->
+
+            <!-- <select name="" id="input-format"  style="border-radius: 10px; border: 3px solid black;">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select> -->
+        </div>
+        <div class="label center">
+            <p>Hours</p>
+            <p>Mintue</p>
+            <!-- <p>Second</p> -->
+            <!-- <p>Format</p> -->
+        </div>
+
+        <div class="center">
+            <button class="add-btn" id="add">Add Alarm</button>
+        </div>
+
+
+        <div id="alarm-list">
+
+            <!-- <div class="active-alarms">
+                <p>7:35</p>
+                <div class="right center">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle_btn">
+                        <span class="slider round"></span>
+                    </label>
+                    <button id="delete-btn" style="margin:0 5px; border: 0;cursor: pointer;">
+                        <img src="delete_FILL0_wght400_GRAD0_opsz24.svg">
+                    </button>
+                </div>
+            </div> -->
+            
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
